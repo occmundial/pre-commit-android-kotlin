@@ -1,20 +1,20 @@
 - id: ktlint
   name: ktlint
   description: Runs ktlint
-  entry: ./gradlew ktlintFormat
+  entry: cd OCCMundial/ && ./gradlew ktlintFormat
   pass_filenames: false
   language: system
 
 - id: unit_tests
   name: unittests
   description: Runs unit tests
-  entry: ./gradlew test
+  entry: cd OCCMundial/ && ./gradlew test
   pass_filenames: false
   language: system
 
 - id: build
   name: build
   description: Building App
-  entry: ./gradlew assembleDebug
+  entry: cd OCCMundial/ && ./gradlew assembleDebug
   pass_filenames: false
   language: system
