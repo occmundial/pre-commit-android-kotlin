@@ -1,10 +1,3 @@
-- id: ktlint
-  name: ktlint
-  description: Runs ktlint
-  entry: cd OCCMundial/ && ./gradlew ktlintFormat
-  pass_filenames: false
-  language: system
-
 - id: unit_tests
   name: unittests
   description: Runs unit tests
