@@ -1,13 +1,13 @@
 - id: unit_tests
   name: unittests
   description: Runs unit tests
-  entry: pwd && ./gradlew test
+  entry: pwd -L && ./gradlew test
   pass_filenames: false
   language: system
 
 - id: build
   name: build
   description: Building App
-  entry: pwd && ./gradlew assembleDebug
+  entry: pwd -P && ./gradlew assembleDebug
   pass_filenames: false
   language: system
