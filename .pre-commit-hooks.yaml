@@ -1,13 +1,13 @@
 - id: unit_tests
   name: unittests
   description: Runs unit tests
-  entry: bash ./gradlew test
+  entry: cd OCCMundial && bash ./gradlew test
   pass_filenames: false
   language: system
 
 - id: build
   name: build
   description: Building App
-  entry: bash ./gradlew assembleDebug
+  entry: cd OCCMundial && bash ./gradlew assembleDebug
   pass_filenames: false
   language: system
