@@ -9,16 +9,14 @@ Add this to your `.pre-commit-config.yaml`
 
 ```
     - repo: https://github.com/jggomez/pre-commit-android-kotlin
-      rev: v1.0.1
+      rev: v1.0.2
       hooks:
-      - id: ktlint
       - id: unit_tests
       - id: build
 ```
 
 ## Hooks available
 
-- `ktlint`: Runs `ktlintFormat`, requires ktlint.
 - `unit_tests`: Runs the unit tests 
 - `build`: Compiles the source code of the project in debug mode
 
